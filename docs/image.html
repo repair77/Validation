@@ -71,37 +71,32 @@
                     </nav>
                 
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="creditcard">CreditCard</h1>
+                    <h1 id="image">Image</h1>
 <ul>
-<li><code>v::creditCard()</code></li>
-<li><code>v::creditCard(string $brand)</code></li>
+<li><code>v::image()</code></li>
+<li><code>v::image(finfo $fileInfo)</code></li>
 </ul>
-<p>Validates a credit card number.</p>
-<pre><code class="language-php">v::creditCard()-&gt;validate('5376 7473 9720 8720'); // true
-
-v::creditCard('American Express')-&gt;validate('340316193809364'); // true
-v::creditCard('Diners Club')-&gt;validate('30351042633884'); // true
-v::creditCard('Discover')-&gt;validate('6011000990139424'); // true
-v::creditCard('JCB')-&gt;validate('3566002020360505'); // true
-v::creditCard('Master')-&gt;validate('5376747397208720'); // true
-v::creditCard('Visa')-&gt;validate('4024007153361885'); // true</code></pre>
-<p>The current supported brands are:</p>
-<ul>
-<li>American Express</li>
-<li>Diners Club</li>
-<li>Discover</li>
-<li>JCB</li>
-<li>MasterCard</li>
-<li>Visa</li>
-</ul>
-<p>It ignores any non-digit chars, so use <code>-&gt;digit()</code> when appropriate.</p>
-<pre><code class="language-php">v::digit()-&gt;creditCard()-&gt;validate('5376747397208720'); // true</code></pre>
+<p>Validates if the file is a valid image by checking its MIME type.</p>
+<pre><code class="language-php">v::image()-&gt;validate('image.gif'); // true
+v::image()-&gt;validate('image.jpg'); // true
+v::image()-&gt;validate('image.png'); // true</code></pre>
+<p>All the validations above must return <code>false</code> if the input is not a valid file
+or of the MIME doesn't match with the file extension.</p>
+<p>This rule relies on <a href="http://php.net/fileinfo">fileinfo</a> PHP extension.</p>
 <hr />
 <p>See also:</p>
 <ul>
-<li><a href="bank.html">Bank</a></li>
-<li><a href="bankaccount.html">BankAccount</a></li>
-<li><a href="bic.html">Bic</a></li>
+<li><a href="directory.html">Directory</a></li>
+<li><a href="executable.html">Executable</a></li>
+<li><a href="exists.html">Exists</a></li>
+<li><a href="extension.html">Extension</a></li>
+<li><a href="file.html">File</a></li>
+<li><a href="mimetype.html">Mimetype</a></li>
+<li><a href="readable.html">Readable</a></li>
+<li><a href="size.html">Size</a></li>
+<li><a href="symboliclink.html">SymbolicLink</a></li>
+<li><a href="uploaded.html">Uploaded</a></li>
+<li><a href="writable.html">Writable</a></li>
 </ul>
                     <div id="go-top">
                         <hr />

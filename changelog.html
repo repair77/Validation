@@ -73,8 +73,28 @@
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
                     <h1 id="changes-in-respectvalidation-10">Changes in Respect\Validation 1.0</h1>
 <p>All notable changes of the Respect\Validation releases are documented in this file.</p>
-<h2 id="100---2015-10-24">1.0.0 - 2015-10-24</h2>
+<h2 id="110---2016-04-24">1.1.0 - 2016-04-24</h2>
 <h3 id="added">Added</h3>
+<ul>
+<li>Create &quot;Fibonacci&quot; rule (#637)</li>
+<li>Create &quot;IdentityCard&quot; rule (#632)</li>
+<li>Create &quot;Image&quot; rule (#621)</li>
+<li>Create &quot;LanguageCode&quot; rule (#597)</li>
+<li>Create &quot;Pesel&quot; rule (#616)</li>
+<li>Create &quot;PhpLabel&quot; rule (#652)</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Allow the define brands for credit card validation (#661)</li>
+<li>Define names for the child of Not rule (#641)</li>
+<li>Ensure namespace separator on appended prefixes (#666)</li>
+<li>Length gets length of integers (#643)</li>
+<li>Set template for the only rule in the chain (#663)</li>
+<li>Throw an exception when age is not an integer (#667)</li>
+<li>Use &quot;{less/greater} than or equal to&quot; phrasing (#604)</li>
+</ul>
+<h2 id="100---2015-10-24">1.0.0 - 2015-10-24</h2>
+<h3 id="added-1">Added</h3>
 <ul>
 <li>Add &quot;alpha-3&quot; and &quot;numeric&quot; formats for &quot;CountryCode&quot; rule (#530)</li>
 <li>Add support for PHP 7 (#426)</li>
@@ -106,7 +126,7 @@
 <li>Create &quot;VideoUrl&quot; rule (#410)</li>
 <li>Create method <code>getMessages()</code> for nested exceptions (#406)</li>
 </ul>
-<h3 id="changed">Changed</h3>
+<h3 id="changed-1">Changed</h3>
 <ul>
 <li>Add country code to the message of &quot;PostalCode&quot; exception rule (#413)</li>
 <li>Make &quot;ArrayVal&quot; validate only if the input can be used as an array (#574)</li>
