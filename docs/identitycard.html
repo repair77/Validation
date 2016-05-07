@@ -71,37 +71,22 @@
                     </nav>
                 
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="creditcard">CreditCard</h1>
+                    <h1 id="identitycard">IdentityCard</h1>
 <ul>
-<li><code>v::creditCard()</code></li>
-<li><code>v::creditCard(string $brand)</code></li>
+<li><code>v::identityCard(string $countryCode)</code></li>
 </ul>
-<p>Validates a credit card number.</p>
-<pre><code class="language-php">v::creditCard()-&gt;validate('5376 7473 9720 8720'); // true
-
-v::creditCard('American Express')-&gt;validate('340316193809364'); // true
-v::creditCard('Diners Club')-&gt;validate('30351042633884'); // true
-v::creditCard('Discover')-&gt;validate('6011000990139424'); // true
-v::creditCard('JCB')-&gt;validate('3566002020360505'); // true
-v::creditCard('Master')-&gt;validate('5376747397208720'); // true
-v::creditCard('Visa')-&gt;validate('4024007153361885'); // true</code></pre>
-<p>The current supported brands are:</p>
-<ul>
-<li>American Express</li>
-<li>Diners Club</li>
-<li>Discover</li>
-<li>JCB</li>
-<li>MasterCard</li>
-<li>Visa</li>
-</ul>
-<p>It ignores any non-digit chars, so use <code>-&gt;digit()</code> when appropriate.</p>
-<pre><code class="language-php">v::digit()-&gt;creditCard()-&gt;validate('5376747397208720'); // true</code></pre>
+<p>Validates Identity Card numbers according to the defined country.</p>
+<pre><code class="language-php">v::identityCard('PL')-&gt;validate('AYW036733'); // true
+v::identityCard('PL')-&gt;validate('APH505567'); // true
+v::identityCard('PL')-&gt;validate('APH 505567'); // false
+v::identityCard('PL')-&gt;validate('AYW036731'); // false</code></pre>
+<p>For now this rule only accepts Polish Identity Card numbers (Dowód Osobisty).</p>
 <hr />
 <p>See also:</p>
 <ul>
 <li><a href="bank.html">Bank</a></li>
-<li><a href="bankaccount.html">BankAccount</a></li>
-<li><a href="bic.html">Bic</a></li>
+<li><a href="pesel.html">Pesel</a></li>
+<li><a href="subdivisioncode.html">SubdivisionCode</a></li>
 </ul>
                     <div id="go-top">
                         <hr />

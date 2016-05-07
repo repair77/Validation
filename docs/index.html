@@ -124,13 +124,13 @@ $usernameValidator-&gt;validate('alexandre gaigalas'); // false
 $usernameValidator-&gt;validate('#$%');                //false</code></pre>
 <h2 id="exception-types">Exception types</h2>
 <ul>
-<li><code>Repect\Validation\Exceptions\ExceptionInterface</code>:
+<li><code>Respect\Validation\Exceptions\ExceptionInterface</code>:
 <ul>
 <li>All exceptions implement this interface;</li>
 </ul></li>
 <li><code>Respect\Validation\Exceptions\ValidationException</code>:
 <ul>
-<li>Implements the <code>Repect\Validation\Exceptions\ExceptionInterface</code> interface</li>
+<li>Implements the <code>Respect\Validation\Exceptions\ExceptionInterface</code> interface</li>
 <li>Thrown when the <code>check()</code> fails</li>
 <li>All validation exceptions extend this class</li>
 <li>Available methods:
@@ -241,7 +241,7 @@ use <code>v::with()</code> passing your rule's namespace as an argument:</p>
 v::myRule(); // Try to load "My\Validation\Rules\MyRule" if any</code></pre>
 <p>By default <code>with()</code> appends the given prefix, but you can change this behavior
 in order to overwrite default rules:</p>
-<pre><code class="language-php">v::with('My\\Validation\\Rules\\', true);
+<pre><code class="language-php">v::with('My\\Validation\\Rules', true);
 v::alnum(); // Try to use "My\Validation\Rules\Alnum" if any</code></pre>
 <h2 id="validator-name">Validator name</h2>
 <p>On <code>v::attribute()</code> and <code>v::key()</code>, <code>{{name}}</code> is the attribute/key name. For others,
