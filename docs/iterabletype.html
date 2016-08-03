@@ -71,11 +71,23 @@
                     </nav>
                 
                 <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="iterable">Iterable</h1>
+                    <h1 id="iterabletype">IterableType</h1>
 <ul>
-<li><code>v::iterable()</code></li>
+<li><code>v::iterableType()</code></li>
 </ul>
-<p><strong>Deprecated</strong>: Use <a href="iterabletype.html">IterableType</a> instead.</p>
+<p>Validates if the input is iterable, in other words, if you're able to iterate
+over it with <a href="http://php.net/foreach">foreach</a> language construct.</p>
+<pre><code class="language-php">v::iterableType()-&gt;validate([]); // true
+v::iterableType()-&gt;validate(new ArrayObject()); // true
+v::iterableType()-&gt;validate(new stdClass()); // true
+v::iterableType()-&gt;validate('string'); // false</code></pre>
+<hr />
+<p>See also:</p>
+<ul>
+<li><a href="arrayval.html">ArrayVal</a></li>
+<li><a href="countable.html">Countable</a></li>
+<li><a href="instance.html">Instance</a></li>
+</ul>
                     <div id="go-top">
                         <hr />
                         <p>
