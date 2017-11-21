@@ -3,23 +3,23 @@
 [![Build Status](https://img.shields.io/travis/Respect/Validation/master.svg?style=flat-square)](http://travis-ci.org/Respect/Validation)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/Respect/Validation/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/Respect/Validation/?branch=master)
 [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/Respect/Validation/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/Respect/Validation/?branch=master)
-[![Latest Stable Version](https://img.shields.io/packagist/v/respect/validation.svg?style=flat-square)](https://packagist.org/packages/respect/validation)
-[![Total Downloads](https://img.shields.io/packagist/dt/respect/validation.svg?style=flat-square)](https://packagist.org/packages/respect/validation)
+[![最新稳定版本](https://img.shields.io/packagist/v/respect/validation.svg?style=flat-square)](https://packagist.org/packages/respect/validation)
+[![总下载数量](https://img.shields.io/packagist/dt/respect/validation.svg?style=flat-square)](https://packagist.org/packages/respect/validation)
 [![License](https://img.shields.io/packagist/l/respect/validation.svg?style=flat-square)](https://packagist.org/packages/respect/validation)
 
 [The most awesome validation engine ever created for PHP.](http://bit.ly/1a1oeQv)
 
-- Complex rules made simple: `v::numericVal()->positive()->between(1, 255)->validate($input)`.
-- [Granularity control](docs/README.md#validation-methods) for advanced reporting.
-- More than 100 (fully tested) validators.
+- 使复杂的规则变得简单： `v::numericVal()->positive()->between(1, 255)->validate($input)`.
+- [先进的粒度控制报告](docs/README.md#validation-methods).
+- 超过100（完全测试）个验证器.
 - [A concrete API](docs/CONCRETE_API.md) for non fluent usage.
-- Works on PHP 5.6+
+- 适用于 PHP 5.6+
 
-## Table of contents
+## 目录
 
-- [Contributing](CONTRIBUTING.md)
-- [Feature Guide](docs/README.md)
-- [Installation](docs/INSTALL.md)
-- [License](LICENSE.md)
-- [Validators](docs/VALIDATORS.md)
-- [Changelog](CHANGELOG.md)
+- [安装](docs/INSTALL.md)
+- [功能向导](docs/README.md)
+- [验证器](docs/VALIDATORS.md)
+- [版本历史](CHANGELOG.md)
+- [贡献](CONTRIBUTING.md)
+- [版权](LICENSE.md)
