@@ -17,7 +17,15 @@
 
 ## 目录
 
-- [安装](docs/INSTALL.md)
+- 安装
+
+安装包在 [Packagist](http://packagist.org/packages/respect/validation),
+可以使用 [Composer](http://getcomposer.org).
+
+```shell
+composer require respect/validation
+```
+
 - [功能向导](docs/README.md)
 - [验证器](docs/VALIDATORS.md)
 - [版本历史](CHANGELOG.md)
